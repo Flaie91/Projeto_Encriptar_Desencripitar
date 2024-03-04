@@ -4,8 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encriptar/Desencriptar</title>
+  <link rel="stylesheet" href="/style/style.css">
 </head>
+
 <body>
   
+    <h1 class="title">Código secreto</h1>
+  
+  <main class="main__container">
+
+    <section class="sec-form_box">      
+        <label for="input_text">Apenas letras minúsculas, sem acento</label>
+        <textarea id="original_Text" name="txarCodificar" rows="20" cols="33" placeholder="Digite aqui (ou cole) o texto para codificar...">       
+        </textarea>  
+        <div class="container_btn">
+          <button class="btn" name="btnCodificar" onclick="encryptText()">Codificar</button>
+          <button class="btn" name="btnDecodificar" onclick="decryptText()">Decodificar</button>  
+        </div>            
+    </section>
+  
+    <section class="sec-msg_box">
+      <label for="input_text">Mensagem criptografada:</label>       
+      <textarea id="decryptedText" name="txarDecod"  rows="20" cols="33" placeholder="Digite aqui (ou cole) o texto para codificar...">       
+      </textarea>  
+      <div class="container_btn">  
+        <button class="btn_copy" name="btnCopy">Copiar</button>
+      </div>
+    </section>
+  </main>
+ <script src="/script/script.js"></script> 
 </body>
 </html>
