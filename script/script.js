@@ -75,3 +75,17 @@ function decryptText() {
 
   document.getElementById("original_Text").value = decryptedText;
 }
+
+
+function copyText() {
+    
+    var textarea = document.getElementById("decrypted_Text");    
+    var texto = textarea.value;
+
+    navigator.clipboard.writeText(texto)
+    .then(()=> {
+        alert("Texto criptografado (codificado) copiado para a área de transferência!");
+    }, function(err) {
+        console.error('Falha ao copiar texto: ', err);
+    });
+  }
